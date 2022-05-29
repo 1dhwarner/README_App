@@ -1,19 +1,8 @@
-// // TODO: Create a function that returns a license badge based on which license is passed in
-// // If there is no license, return an empty string
-// function renderLicenseBadge(license) { }
-
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink(license) { }
-
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) { }
-
-// TODO: Create a function to generate markdown for README
+// two variables left open to match the user input for the corresponding license question
 let licenseLink = '';
 let licenseBadge = '';
 
+// passing in the data from the inquirer prompts which will be used in the template literal returned below 
 const generateMarkdown = function ({ title, description, usage, license, contributing, tests, questions }) {
 
 
@@ -64,7 +53,7 @@ const generateMarkdown = function ({ title, description, usage, license, contrib
       break;
   }
 
-  // return `# ${data.title}
+  // template for generated readme markdown file 
   return `
 # ${title}
 

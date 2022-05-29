@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const readmeGen = require('./utils/generateMarkdown.js');
-// TODO: Create an array of questions for user input
+
+// inquirer prompt that will run in the command line
 const readmePrompt = function () {
     return inquirer.prompt([
         {
@@ -43,10 +43,9 @@ const readmePrompt = function () {
     ])
 };
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) { }
 
-// TODO: Create a function to initialize app
+
+// The starter code confused me here. That's why I used the code block from a previous class activity below, which consolidated the functions originally laid out. 
 const init = () => {
     readmePrompt()
         // Use writeFileSync method to use promises instead of a callback function
