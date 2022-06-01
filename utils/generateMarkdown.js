@@ -5,7 +5,7 @@ let licenseBadge = '';
 // passing in the data from the inquirer prompts which will be used in the template literal returned below 
 const generateMarkdown = function ({ title, description, usage, license, contributing, tests, questions }) {
 
-
+  // switch case that passes in the licenses selection (using the inquirer 'license' property) and returns a link and a badge for each corresponding license 
   switch (license) {
     case license = 'apache':
       licenseLink = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
